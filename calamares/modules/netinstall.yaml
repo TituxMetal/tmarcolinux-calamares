@@ -1,0 +1,162 @@
+- name: "Linux kernel without any nvidia"
+  description: "Installs only the latest linux kernel (not the one from iso)"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - linux
+- name: "Nvidia with linux kernel"
+  description: "Installs nvidia and linux kernel - check Arch wiki nvidia"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - linux
+    - nvidia
+    - nvidia-settings
+    - nvidia-utils
+- name: "Nvidia-390xx with linux kernel"
+  description: "Installs nvidia-390xx and linux kernel - check Arch wiki nvidia"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - linux
+    - nvidia-390xx
+    - nvidia-390xx-settings
+    - nvidia-390xx-utils
+- name: "Intel-ucode"
+  description: "Installs intel-ucode - see Arch wiki microcode"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - intel-ucode
+- name: "Accessories"
+  description: "Accessories"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - font-manager-git
+- name: "Development"
+  description: "Development"
+  critical: false
+  hidden: false
+  selected: true
+  packages:
+    - code
+- name: "Fonts"
+  description: "Fonts"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - adobe-source-sans-pro-fonts
+    - terminus-font
+    - ttf-bitstream-vera
+    - ttf-inconsolata
+    - ttf-liberation
+    - ttf-ubuntu-font-family
+- name: "Games"
+  description: "Games"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - arcolinux-meta-steam
+- name: "Graphics"
+  description: "Graphics"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - gimp
+    - inkscape
+    - nitrogen
+    - nomacs
+- name: "Internet"
+  description: "Internet"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - discord
+    - firefox-developer-edition
+    - firefox-developer-edition-i18n-fr
+    - firefox-i18n-fr
+    - firefox-ublock-origin
+    - firefox-dark-reader
+    - qbittorrent
+    - telegram-desktop
+    - thunderbird
+- name: "Libre Office Fresh"
+  description: "Installs libre office fresh - feature branch - conflicts with still"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - libreoffice-fresh
+    - libreoffice-fresh-$LOCALE
+    - hunspell-$LOCALE
+- name: "Libre Office Still"
+  description: "Installs libre office still - stable branch - conflicts with fresh"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - libreoffice-still
+    - libreoffice-still-$LOCALE
+    - hunspell-$LOCALE
+- name: "Multimedia"
+  description: "Multimedia"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - audacity
+    - handbrake
+    - openshot
+    - mpv
+    - simplescreenrecorder
+    - vlc
+- name: "Themes"
+  description: "Themes"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - adapta-gtk-theme
+    - arc-icon-theme
+    - arcolinux-arc-themes-nico-git
+    - faba-icon-theme
+    - gnome-icon-theme
+    - moka-icon-theme
+    - oxy-neon
+    - paper-icon-theme
+    - papirus-icon-theme
+    - xcursor-simpleandsoft
+- name: "Utilities"
+  description: "Utilities"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - evince
+    - glances
+    - glxinfo
+    - grsync
+    - gtop
+    - gufw
+    - hddtemp
+    - lm_sensors
+    - timeshift
+- name: "Virtualbox for Linux kernel"
+  description: "Installs virtualbox for linux kernel"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - virtualbox
+    - virtualbox-host-dkms
+    - linux-headers
